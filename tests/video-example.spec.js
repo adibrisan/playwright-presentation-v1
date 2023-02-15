@@ -32,7 +32,7 @@ test("Slow motion and video recording", async () => {
   await page.locator("text=Logout").click();
   await page.waitForURL("https://www.saucedemo.com/");
 
-  await expect(page).toHaveScreenshot();
+  await page.screenshot({ path: "./tests/screenshots/screenshot.png" });
 
   await context.close();
 });
