@@ -38,7 +38,7 @@ test.describe("general flow test", () => {
     await page.locator('[data-test="password"]').click();
     await page.locator('[data-test="password"]').fill("secret_sauce");
     await page.locator('[data-test="login-button"]').click();
-    await expect(page).toHaveURL(/.*inventory.html/);
+    await expect(page).toHaveURL(/.*inventory.html/); // make an error to trigger tracing
 
     await page.locator("text=Open Menu").click();
     await page.locator("text=Logout").click();
