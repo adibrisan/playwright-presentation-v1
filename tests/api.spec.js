@@ -17,3 +17,6 @@ test.describe.parallel("API Testing", () => {
     expect(resBody).not.toBeNull();
   });
 });
+
+// Write your soulution here
+test.describe.parallel("API exercise", () => {});
